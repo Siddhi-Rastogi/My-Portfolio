@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhi Rastogi | Software Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54aa7bc66d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ================= Preloader ================= -->
+    <div id="preloader">
+        <div class="loader-text">Siddhi<span>.</span></div>
+        <div class="loader-bar"><span></span></div>
+    </div>
+
+    <!-- ================= Scroll progress ================= -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================= Custom cursor glow ================= -->
+    <div id="cursor-glow"></div>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <!-------------------------logo & Menu---------------------------->
+                <img src="images/logo.JPG" class="logo" alt="Siddhi Rastogi logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#certificates-gallery" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="menu-backdrop" onclick="closemenu()"></div>
+            <div class="header-text">
+                <p class="reveal-fade"><span id="typed-role">Software Professional</span><span class="cursor-blink">|</span></p>
+                <h1 class="reveal-fade" style="transition-delay:.1s">Hi, I'm <span>Siddhi</span> Rastogi</h1>
+                <h5 class="reveal-fade" style="transition-delay:.2s">Currently Pursuing<br> Masters Of Computer Application </h5>
+                <a href="#portfolio" class="btn hero-btn reveal-fade" style="transition-delay:.3s">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <!-- <div class="scroll-indicator"><span></span></div> -->
+        </div>
+    </div>
+    <!-------------------------about---------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 reveal">
+                    <img src="images/user2.JPEG" alt="Siddhi Rastogi">
+                </div>
+                <div class="about-col-2 reveal">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Looking to land an opportunity to leverage my competencies and expertise in computer and information technology in role that fosters professional development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates', event)">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Advanced Java</li>
+                            <li><span>SpringBoot</span><br>Backend Development</li>
+                            <li><span>OOPS</span><br>Programming Approach</li>
+                            <li><span>DSA</span><br>Algorithims</li>
+                            <li><span>HTML/CSS</span><br>Web Designing</li>
+                            <li><span>SQL</span><br>Query Language</li>
+                            <li><span>DBMS</span><br>Database design, Normalisation, Performance tuning</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>experience</span><br> yaha dalega<br>2022-Present</li> 
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master Of Computer Applications</span><br>ABES Engineering College<br>2027'</li>
+                            <li><span>Bachelor Of Computer Application</span><br>Teerthankar Mahaveer University<br>2025'</li>
+                            <li><span>Intermidiate</span><br>S.S. Children Academy<br>2022'</li>
+                            <li><span>High School</span><br>S.S. Children Academy<br>2020'</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>JAVA SUMMER TRAINING </span><br> Codesquadz  a venture of APPSQUADZ SOFTWARE PVT. LTD.</li>
+                            <li><span>PYTHON ESSENTIAL</span><br>Cisco Networking Academy </li>
+                            <li><span>HackIndia Hackathon</span><br>Reached the Top 16 finalist teams in HackIndia 2026 by developing an innovative software-based solution in a competitive hackathon environment.</li>
+
+	
+
+
+                            <li><span>Spoken Tutorial project at IIT Bombay</span><br>Certificate for the completion of C language.</li>
+                            <li><span>Introduction to Microsoft Excel</span><br>An online project authorized by Coursera Project Network and offered through Coursera.</li>
+                            <!-- <li><span>Spoken Tutorial Project at IT BOMBAY </span><br>Introduction to Computer training</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------services---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title reveal"> My Services</h1>
+            <div class="services-list">
+                <div class="tilt-card reveal">
+                    <i class="fa-brands fa-java"></i>  <!--------SYMBOL FROM FONT AWSOME-------- -->
+                    <h2>Java Application Development</h2>
+                    <p>Developing efficient Java applications using core Java concepts, object-oriented programming, exception handling, collections, and JDBC integration.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="tilt-card reveal">
+                    <i class="fa-solid fa-crop"></i> <!--------SYMBOL FROM FONT AWSOME-------- -->
+                    <h2>Spring Boot Backend Development</h2>
+                    <p>Building backend applications and REST APIs using Spring Boot with database connectivity, authentication, and scalable application architecture.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="tilt-card reveal">
+                    <i class="fa-solid fa-database"></i> <!--------SYMBOL FROM FONT AWSOME-------- -->
+                    <h2>Database Management & Problem Solving</h2>
+                    <p>Designing and managing relational databases while solving programming problems using Data Structures and Algorithms for optimized solutions.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------portfolio--------------------------- -->
+     <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title reveal">My Projects</h1>  
+        <div class="work-list">
+            <div class="work reveal">
+                <img src="images/work-1.png" alt="Mail Matrix project">
+                <div class="layer">
+                    <h3>Mail Matrix</h3>
+                    <p>A full-featured mailing application enabling users to register, authenticate, and manage their email communications 
+                        seamlessly. 
+                         Developed the front-end using HTML & CSS, creating a responsive and user-friendly interface. 
+                         Managed the backend entirely with Java, efficiently handling server-side logic and data processing. 
+                         Worked with servlets, I/O, and mail packages to implement core mailing functionalities, ensuring smooth communication flow.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work reveal">
+                <img src="images/work-2.png" alt="Online Shopping Webapp project">
+                <div class="layer">
+                    <h3>Online Shopping Webapp</h3>
+                    <p>A sleek and intuitive web application that allows users to seamlessly shop online, featuring user authentication, secure data 
+                        management, and the ability to add selected items to a cart for an efficient checkout. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work reveal">
+                <img src="images/work-3.png" alt="Java Compiler project">
+                <div class="layer">
+                    <h3>Java Compiler</h3>
+                    <p>Developed a web-based Java compiler and runtime environment that allows users to write, compile, and execute Java code directly 
+                        from their browsers. </p>
+                    <a href="https://github.com/Siddhi-Rastogi/JAVA-COMPILER-PROJECT" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div> 
+        <a href="#" class="btn reveal">See more</a>
+     </div>
+ </div>
+ 
+  <!-- ================= Certificates ================= -->
+
+<div id="certificates-gallery">
+    <div class="container">
+        <h1 class="sub-title reveal">Certificates</h1>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/CodeSquadz.png')">
+                <img src="images/CodeSquadz.png" alt="Java Summer Training" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>Java Summer Training</h3>
+                    <p>Codesquadz - A venture of APPSQUADZ SOFTWARE PVT. LTD.</p>
+                </div>
+            </div>
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/python-essential2.png')">
+                <img src="images/python-essential2.png" alt="Python Essentials" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>Python Essentials</h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+            </div>
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/HackIndia.png')">
+                <img src="D:\protfolio\images\IMG_7405.PNG" alt="HackIndia Hackathon 2026" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>HackIndia Hackathon 2026</h3>
+                    <p>Top 16 Finalist - India's Biggest Web3 &amp; AI Hackathon</p>
+                </div>
+            </div>
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/C-Programming.png')">
+                <img src="images/C-Programming.png" alt="C Programming" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>C Programming</h3>
+                    <p>Spoken Tutorial Project at IIT Bombay</p>
+                </div>
+            </div>
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/MicrosoftExcel.jpg')">
+                <img src="images/MicrosoftExcel.jpg" alt="Microsoft Excel" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>Introduction to Microsoft Excel</h3>
+                    <p>Coursera Project Network</p>
+                </div>
+            </div>
+
+            <div class="certificate-card tilt-card reveal" onclick="openLightbox('images/ComputerTraining.png')">
+                <img src="images/ComputerTraining.png" alt="Computer Training" onerror="handleImgError(this)">
+                <div class="certificate-info">
+                    <h3>Computer Training</h3>
+                    <p>Spoken Tutorial Project, IIT Bombay</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox -->
+
+<div id="lightbox">
+    <span id="close-btn">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<!-- ----------------contact----------------  -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left reveal">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rastogisiddhi25@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8630795611</p>
+            <div class="social-icons">
+                <a href="mailto:rastogisiddhi25@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/siddhi-rastogi-34626930a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Siddhi-Rastogi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            
+            <a href="Siddhi_Rastogi_resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+            <div class="contact-right reveal">
+                <form name="submit-to-google-sheet" id="contact-form" novalidate>
+                    <div class="input-group">
+                        <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                        <span class="input-error">Please enter your name</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+                        <span class="input-error">Please enter a valid email</span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="Message" id="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <span class="input-error">Please enter a message</span>
+                    </div>
+                    <button type="submit" class="btn btn2"><span class="btn-text">Submit</span><span class="btn-spinner"></span></button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Siddhi <i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+
+ <!-- Back to top -->
+ <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+ <!-- Toast -->
+ <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
