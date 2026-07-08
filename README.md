@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing my projects, technical skills,
 ## 🌐 Live Demo
 
 > Coming Soon
-
+https://lestconnect-withisiddhi.netlify.app/
 ---
 
 # 📖 About
